@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesibilisation au Handicap</title>
+
+    <!--        lien vers le fichier css        -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<header class="navbar">
+    <div class="nav-left">
+        <!--        Lien du logo        -->
+
+        <img id="logo" src="./asset/img/logo.png" style="width: 100px; height: auto;"></a>
+    </div>
+
+    <h1>Sensibilisation au Handicap</h1>
+
+    <div class="nav-right">
+        <!-- Icône du menu hamburger -->
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    
+    <!-- Menu déroulant hamburger -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="type-de-handicap.html">Type de handicap</a></li>
+            <li><a href="temoignage.html">Témoignage</a></li>
+            <li><a href="page-ressource.html">Page ressource</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="à-propos.html">À propos</a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        // Script pour ouvrir et fermer le menu
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            var menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("active");
+        });
+        </script>
+</header>
